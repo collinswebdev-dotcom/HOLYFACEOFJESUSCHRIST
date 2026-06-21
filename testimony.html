@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonies | Jesus Love</title>
+    <meta name="description" content="Over 500,000 testimonies of encounters with the Holy Face of Jesus. Healing, conversion, and miracles.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .testimony-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .testimony-card {
+            background: var(--dark-light);
+            border-radius: 16px;
+            padding: 30px;
+            border-left: 4px solid var(--gold);
+            transition: var(--transition);
+        }
+        .testimony-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .testimony-card .quote {
+            font-family: var(--font-serif);
+            font-style: italic;
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        .testimony-card .quote::before {
+            content: '"';
+            font-size: 2rem;
+            color: var(--gold);
+        }
+        .testimony-card .quote::after {
+            content: '"';
+            font-size: 2rem;
+            color: var(--gold);
+        }
+        .testimony-card .author {
+            font-size: 0.9rem;
+            color: var(--gold);
+            font-weight: 600;
+        }
+        .testimony-card .location {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        .testimony-stats {
+            text-align: center;
+            padding: 40px 20px;
+            background: radial-gradient(ellipse at center, rgba(184, 148, 30, 0.06) 0%, transparent 70%);
+            border-radius: 20px;
+            margin-bottom: 40px;
+        }
+        .testimony-stats .number {
+            font-family: var(--font-serif);
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--gold);
+            display: block;
+        }
+        .testimony-stats .label {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            font-family: var(--font-serif);
+            font-style: italic;
+        }
+        .testimony-stats .sub {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-top: 10px;
+        }
+        @media (max-width: 768px) {
+            .testimony-grid { grid-template-columns: 1fr; }
+            .testimony-stats .number { font-size: 2.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">Jesus<span>Love</span></a>
+    <p class="tagline">Voice in the Silent</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="talks.html">Talks</a>
+        <a href="testimony.html" class="active">Testimonies</a>
+        <a href="shroud.html">The Shroud</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="testimony-stats">
+        <span class="number">500,000+</span>
+        <span class="label">Encountered the Holy Face</span>
+        <p class="sub">From every nation, tribe, and tongue — souls who have looked upon Jesus and been changed.</p>
+    </div>
+
+    <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; color: var(--gold); text-align: center;">Their Encounters</h2>
+    <p style="text-align: center; color: var(--text-muted); max-width: 600px; margin: 0 auto 40px;">A selection of testimonies from the millions who have encountered the Holy Face of Jesus.</p>
+
+    <div class="testimony-grid">
+        <div class="testimony-card">
+            <div class="quote">I was drowning in depression. Then I looked upon the Holy Face, and for the first time in years, I felt peace.</div>
+            <div class="author">— Maria</div>
+            <div class="location">Colombia</div>
+        </div>
+        <div class="testimony-card">
+            <div class="quote">My marriage was falling apart. I prayed the Holy Face novena. Today, my family is healed.</div>
+            <div class="author">— John</div>
+            <div class="location">Nigeria</div>
+        </div>
+        <div class="testimony-card">
+            <div class="quote">I was addicted to pornography for 15 years. The Holy Face broke the chains.</div>
+            <div class="author">— Anonymous</div>
+            <div class="location">United States</div>
+        </div>
+        <div class="testimony-card">
+            <div class="quote">The doctor said I would never walk again. I looked upon the Holy Face. Today I walk.</div>
+            <div class="author">— Patrick</div>
+            <div class="location">Kenya</div>
+        </div>
+        <div class="testimony-card">
+            <div class="quote">I was a Muslim. I saw the Holy Face in a dream. I am now a Catholic priest.</div>
+            <div class="author">— Fr. Emmanuel</div>
+            <div class="location">Cameroon</div>
+        </div>
+        <div class="testimony-card">
+            <div class="quote">My son was in the ICU. I prayed the Holy Face devotion. He was discharged two days later.</div>
+            <div class="author">— Grace</div>
+            <div class="location">Ghana</div>
+        </div>
+        <div class="testimony-card">
+            <div class="quote">The Holy Face delivered me from anxiety. I live in joy now.</div>
+            <div class="author">— Sarah</div>
+            <div class="location">United Kingdom</div>
+        </div>
+        <div class="testimony-card">
+            <div class="quote">My business was failing. I consecrated it to the Holy Face. It turned around.</div>
+            <div class="author">— David</div>
+            <div class="location">India</div>
+        </div>
+        <div class="testimony-card">
+            <div class="quote">I was a witch. I came across a Holy Face image. It terrified me. Then it healed me.</div>
+            <div class="author">— Chidi</div>
+            <div class="location">Nigeria</div>
+        </div>
+        <div class="testimony-card">
+            <div class="quote">I have been praying the Holy Face Rosary for my family. They have all returned to the Church.</div>
+            <div class="author">— Rose</div>
+            <div class="location">Poland</div>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin: 50px 0 30px; color: var(--text-muted);">
+        <p style="font-size: 1.1rem; font-style: italic; font-family: var(--font-serif);">"And we all, with unveiled face, beholding the glory of the Lord, are being transformed into his image" — 2 Corinthians 3:18</p>
+    </div>
+</div>
+
+<footer>
+    <p>🙏 In the silence, He speaks.</p>
+    <p style="font-size: 0.8rem; color: #555;">Holy Face of Jesus, have mercy on us.</p>
+    <div class="dev-credit">Site by <a href="#">Mac-Collins Ukwuoma</a> · Graphic Realities</div>
+</footer>
+
+</body>
+</html>
