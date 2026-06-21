@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- HOME -->
+    <url>
+        <loc>https://collinswebdev-dotcom.github.io/jesus-love/</loc>
+        <lastmod>2026-06-21</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- TALKS -->
+    <url>
+        <loc>https://collinswebdev-dotcom.github.io/jesus-love/talks.html</loc>
+        <lastmod>2026-06-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- TESTIMONIES -->
+    <url>
+        <loc>https://collinswebdev-dotcom.github.io/jesus-love/testimony.html</loc>
+        <lastmod>2026-06-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- THE SHROUD (HISTORY) -->
+    <url>
+        <loc>https://collinswebdev-dotcom.github.io/jesus-love/shroud.html</loc>
+        <lastmod>2026-06-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- ABOUT -->
+    <url>
+        <loc>https://collinswebdev-dotcom.github.io/jesus-love/about.html</loc>
+        <lastmod>2026-06-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- CONTACT -->
+    <url>
+        <loc>https://collinswebdev-dotcom.github.io/jesus-love/contact.html</loc>
+        <lastmod>2026-06-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- 
+    ============================================
+    INSTRUCTIONS FOR FUTURE UPDATES:
+    When you add a new page (e.g., prayers.html, 
+    novena.html, resources.html), copy the block 
+    below, update the <loc> and <lastmod>, and 
+    paste it above this comment.
+    ============================================
+    -->
+
+    <!-- TEMPLATE FOR NEW PAGES (COPY AND PASTE THIS BLOCK) -->
+    <!--
+    <url>
+        <loc>https://collinswebdev-dotcom.github.io/jesus-love/your-new-page.html</loc>
+        <lastmod>2026-06-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    -->
+
+</urlset>
