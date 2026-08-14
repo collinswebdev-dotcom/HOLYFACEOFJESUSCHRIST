@@ -1,72 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-    <!-- HOME -->
+    <!-- Home Page -->
     <url>
-        <loc>https://collinswebdev-dotcom.github.io/jesus-love/</loc>
-        <lastmod>2026-06-21</lastmod>
+        <loc>https://collinswebdev-dotcom.github.io/HOLYFACEOFJESUSCHRIST/</loc>
+        <lastmod>2026-08-14</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://collinswebdev-dotcom.github.io/HOLYFACEOFJESUSCHRIST/JESUSLOVE.jpeg</image:loc>
+            <image:title>Holy Face of Jesus Christ</image:title>
+            <image:caption>Behold the Holy Face</image:caption>
+        </image:image>
     </url>
 
-    <!-- TALKS -->
+    <!-- Talks -->
     <url>
-        <loc>https://collinswebdev-dotcom.github.io/jesus-love/talks.html</loc>
-        <lastmod>2026-06-21</lastmod>
+        <loc>https://collinswebdev-dotcom.github.io/HOLYFACEOFJESUSCHRIST/talks.html</loc>
+        <lastmod>2026-08-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Testimonies -->
+    <url>
+        <loc>https://collinswebdev-dotcom.github.io/HOLYFACEOFJESUSCHRIST/testimony.html</loc>
+        <lastmod>2026-08-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- TESTIMONIES -->
+    <!-- The Shroud -->
     <url>
-        <loc>https://collinswebdev-dotcom.github.io/jesus-love/testimony.html</loc>
-        <lastmod>2026-06-21</lastmod>
+        <loc>https://collinswebdev-dotcom.github.io/HOLYFACEOFJESUSCHRIST/shroud.html</loc>
+        <lastmod>2026-08-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- THE SHROUD (HISTORY) -->
+    <!-- Holy Face Chaplet -->
     <url>
-        <loc>https://collinswebdev-dotcom.github.io/jesus-love/shroud.html</loc>
-        <lastmod>2026-06-21</lastmod>
+        <loc>https://collinswebdev-dotcom.github.io/HOLYFACEOFJESUSCHRIST/chaplet.html</loc>
+        <lastmod>2026-08-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Litany of the Holy Face -->
+    <url>
+        <loc>https://collinswebdev-dotcom.github.io/HOLYFACEOFJESUSCHRIST/litany.html</loc>
+        <lastmod>2026-08-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Golden Arrow -->
+    <url>
+        <loc>https://collinswebdev-dotcom.github.io/HOLYFACEOFJESUSCHRIST/golden-arrow.html</loc>
+        <lastmod>2026-08-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Virtual Candle Wall -->
+    <url>
+        <loc>https://collinswebdev-dotcom.github.io/HOLYFACEOFJESUSCHRIST/candles.html</loc>
+        <lastmod>2026-08-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Seven Sorrows -->
+    <url>
+        <loc>https://collinswebdev-dotcom.github.io/HOLYFACEOFJESUSCHRIST/sorrows.html</loc>
+        <lastmod>2026-08-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- ABOUT -->
+    <!-- Holy Hour -->
     <url>
-        <loc>https://collinswebdev-dotcom.github.io/jesus-love/about.html</loc>
-        <lastmod>2026-06-21</lastmod>
+        <loc>https://collinswebdev-dotcom.github.io/HOLYFACEOFJESUSCHRIST/holyhour.html</loc>
+        <lastmod>2026-08-14</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
 
-    <!-- CONTACT -->
+    <!-- Consecration -->
     <url>
-        <loc>https://collinswebdev-dotcom.github.io/jesus-love/contact.html</loc>
-        <lastmod>2026-06-21</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <loc>https://collinswebdev-dotcom.github.io/HOLYFACEOFJESUSCHRIST/consecration.html</loc>
+        <lastmod>2026-08-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
     </url>
 
-    <!-- 
-    ============================================
-    INSTRUCTIONS FOR FUTURE UPDATES:
-    When you add a new page (e.g., prayers.html, 
-    novena.html, resources.html), copy the block 
-    below, update the <loc> and <lastmod>, and 
-    paste it above this comment.
-    ============================================
-    -->
-
-    <!-- TEMPLATE FOR NEW PAGES (COPY AND PASTE THIS BLOCK) -->
-    <!--
+    <!-- Support the Mission -->
     <url>
-        <loc>https://collinswebdev-dotcom.github.io/jesus-love/your-new-page.html</loc>
-        <lastmod>2026-06-21</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <loc>https://collinswebdev-dotcom.github.io/HOLYFACEOFJESUSCHRIST/support.html</loc>
+        <lastmod>2026-08-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
-    -->
+
+    <!-- About -->
+    <url>
+        <loc>https://collinswebdev-dotcom.github.io/HOLYFACEOFJESUSCHRIST/about.html</loc>
+        <lastmod>2026-08-14</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- Contact -->
+    <url>
+        <loc>https://collinswebdev-dotcom.github.io/HOLYFACEOFJESUSCHRIST/contact.html</loc>
+        <lastmod>2026-08-14</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- Downloads -->
+    <url>
+        <loc>https://collinswebdev-dotcom.github.io/HOLYFACEOFJESUSCHRIST/downloads.html</loc>
+        <lastmod>2026-08-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- 404 Page -->
+    <url>
+        <loc>https://collinswebdev-dotcom.github.io/HOLYFACEOFJESUSCHRIST/404.html</loc>
+        <lastmod>2026-08-14</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.1</priority>
+    </url>
 
 </urlset>
