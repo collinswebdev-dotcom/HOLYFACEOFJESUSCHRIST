@@ -1,0 +1,10 @@
+# Robots.txt for HOLYFACEOFJESUSCHRIST
+# "Voice in the Silent"
+
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://collinswebdev-dotcom.github.io/HOLYFACEOFJESUSCHRIST/sitemap.xml
+
+# Private Areas (None — this is a house of prayer, open to all)
