@@ -1,7 +1,7 @@
 /* ============================================================
    HOLY FACE OF JESUS CHRIST – COMPLETE MASTER STYLESHEET
    "Voice in the Silent"
-   Developed by Mac-Collins Ukwuoma · Graphic Realities
+   Developed by Mac-Collins Ukwuoma
    ============================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@200;300;400;500;600;700&family=Cinzel:wght@400;500;600;700&display=swap');
@@ -49,7 +49,6 @@ body {
     line-height: 1.8;
     overflow-x: hidden;
     min-height: 100vh;
-    padding-top: 140px; /* Space for fixed header */
 }
 
 /* ----- SCROLLBAR ----- */
@@ -69,31 +68,40 @@ body {
     pointer-events: none;
 }
 
-/* ----- HEADER (FIXED) ----- */
+/* ----- HEADER (STICKY — FACEBOOK LITE STYLE) ----- */
 header {
     background: linear-gradient(180deg, rgba(13,10,7,0.98) 0%, rgba(28,24,20,0.97) 100%);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    padding: 20px 0 12px;
+    padding: 15px 0 10px;
     border-bottom: 2px solid var(--gold);
     text-align: center;
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
     z-index: 9999;
     box-shadow: 0 4px 30px rgba(0,0,0,0.6);
-    transition: var(--transition);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+/* Header hidden state (when scrolling down) */
+header.header-hidden {
+    transform: translateY(-100%);
+    box-shadow: none;
+}
+
+/* Header visible state (when scrolling up or at top) */
+header.header-visible {
+    transform: translateY(0);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.6);
 }
 
 .logo {
     font-family: var(--font-display);
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     font-weight: 600;
     color: var(--gold);
     text-decoration: none;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     transition: var(--transition);
     display: inline-block;
@@ -112,17 +120,17 @@ header {
 .tagline {
     font-family: var(--font-serif);
     font-style: italic;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--text-muted);
-    margin-top: 2px;
+    margin-top: 0;
     letter-spacing: 1px;
 }
 
 nav {
-    margin-top: 15px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
-    gap: 8px;
+    gap: 6px;
     flex-wrap: wrap;
     padding: 0 10px;
 }
@@ -131,8 +139,8 @@ nav a {
     color: var(--text-muted);
     text-decoration: none;
     font-family: var(--font-serif);
-    font-size: 1.05rem;
-    padding: 9px 22px;
+    font-size: 0.95rem;
+    padding: 7px 18px;
     border-radius: 30px;
     transition: var(--transition);
     border: 1px solid transparent;
@@ -152,7 +160,7 @@ nav a.active {
 .container {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 50px 25px;
+    padding: 40px 25px;
     position: relative;
     z-index: 1;
 }
@@ -173,7 +181,7 @@ nav a.active {
 
 .hero h1 {
     font-family: var(--font-display);
-    font-size: 3.8rem;
+    font-size: 3.5rem;
     font-weight: 600;
     color: var(--gold);
     margin-bottom: 20px;
@@ -921,7 +929,6 @@ footer .dev-credit a {
     pointer-events: none;
 }
 
-/* Remove tooltip completely */
 .floating-whatsapp .tooltip {
     display: none !important;
 }
@@ -957,17 +964,19 @@ footer .dev-credit a {
 
 /* ----- RESPONSIVE ----- */
 @media (max-width: 1024px) {
-    body { padding-top: 160px; }
     .hero h1 { font-size: 3rem; }
     .section-title { font-size: 2.2rem; }
+    .logo { font-size: 2rem; }
+    nav a { padding: 7px 15px; font-size: 0.9rem; }
 }
 
 @media (max-width: 768px) {
-    body { padding-top: 190px; }
-    .logo { font-size: 2rem; }
+    .logo { font-size: 1.7rem; }
+    .tagline { font-size: 0.9rem; }
     .hero h1 { font-size: 2.2rem; }
     .hero p { font-size: 1rem; }
-    nav a { padding: 7px 15px; font-size: 0.9rem; }
+    nav { gap: 4px; }
+    nav a { padding: 6px 12px; font-size: 0.8rem; }
     .card-grid { grid-template-columns: 1fr; }
     .testimony-grid { grid-template-columns: 1fr; }
     .section-title { font-size: 1.8rem; }
@@ -984,20 +993,20 @@ footer .dev-credit a {
 }
 
 @media (max-width: 480px) {
-    body { padding-top: 220px; }
+    .logo { font-size: 1.4rem; }
     .hero h1 { font-size: 1.7rem; }
     .hero-image { max-width: 180px; }
     .btn-primary, .btn-secondary, .btn-whatsapp { padding: 12px 25px; font-size: 0.85rem; width: 100%; text-align: center; }
     .card { padding: 20px; }
     .prayer-card { padding: 25px; }
     .section-title { font-size: 1.5rem; }
-    nav { gap: 4px; }
-    nav a { padding: 6px 12px; font-size: 0.8rem; }
+    nav { gap: 3px; }
+    nav a { padding: 5px 10px; font-size: 0.75rem; }
 }
 
 /* ----- PRINT STYLES FOR PRAYERS ----- */
 @media print {
-    body { background: #fff; color: #000; padding-top: 0; }
+    body { background: #fff; color: #000; }
     header, footer, nav, .btn-primary, .btn-secondary, .btn-whatsapp, .floating-whatsapp { display: none; }
     .container { max-width: 100%; padding: 0; }
     .prayer-card, .litany-container, .sorrow-card { border: 1px solid #ccc; box-shadow: none; background: #fff; }
