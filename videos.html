@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Face Videos | Jesus Love</title>
+    <meta name="description" content="Watch powerful Holy Face devotion videos. Gaze upon the Face of Jesus. In the silence, He speaks.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .video-hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: radial-gradient(ellipse at center, rgba(184, 148, 30, 0.08) 0%, transparent 70%);
+            border-radius: var(--radius);
+            margin-bottom: 40px;
+            border: var(--border-gold);
+        }
+        .video-hero h1 {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+        .video-hero p {
+            color: var(--text-muted);
+            font-family: var(--font-serif);
+            font-style: italic;
+            font-size: 1.15rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+        .video-card {
+            background: var(--dark-card);
+            border-radius: var(--radius);
+            overflow: hidden;
+            border: var(--border-gold);
+            transition: var(--transition);
+            position: relative;
+        }
+        .video-card:hover {
+            border-color: var(--gold);
+            box-shadow: var(--shadow-card);
+            transform: translateY(-5px);
+        }
+        .video-card video {
+            width: 100%;
+            display: block;
+            background: #000;
+            aspect-ratio: 9/16;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        .video-card .video-info {
+            padding: 15px 20px;
+            text-align: center;
+        }
+        .video-card .video-title {
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            color: var(--gold);
+            margin-bottom: 5px;
+        }
+        .video-card .video-caption {
+            font-family: var(--font-serif);
+            font-style: italic;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+        .video-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 25px;
+            border-radius: 50px;
+            border: 2px solid var(--gold);
+            background: transparent;
+            color: var(--gold);
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: var(--font-sans);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .video-toggle:hover {
+            background: var(--gold);
+            color: var(--dark);
+            box-shadow: 0 8px 25px rgba(184, 148, 30, 0.3);
+        }
+        .video-toggle.playing {
+            background: var(--gold);
+            color: var(--dark);
+        }
+        .video-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            pointer-events: none;
+            opacity: 0.7;
+            transition: var(--transition);
+        }
+        @media (max-width: 768px) {
+            .video-hero h1 { font-size: 1.8rem; }
+            .video-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">Jesus<span>Love</span></a>
+    <p class="tagline">Voice in the Silent</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="talks.html">Talks</a>
+        <a href="testimony.html">Testimonies</a>
+        <a href="shroud.html">The Shroud</a>
+        <a href="chaplet.html">Chaplet</a>
+        <a href="litany.html">Litany</a>
+        <a href="golden-arrow.html">Golden Arrow</a>
+        <a href="candles.html">Candles</a>
+        <a href="sorrows.html">Sorrows</a>
+        <a href="holyhour.html">Holy Hour</a>
+        <a href="consecration.html">Consecration</a>
+        <a href="videos.html" class="active">Videos</a>
+        <a href="support.html">Support</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="video-hero">
+        <h1>🕊️ Holy Face Videos</h1>
+        <div class="divider divider-glow"></div>
+        <p>"In the silence, He speaks. In the stillness, His love heals. Choose a video and gaze upon Him."</p>
+    </div>
+
+    <div class="video-grid">
+        
+        <!-- VIDEO 1 -->
+        <div class="video-card">
+            <video id="video1" preload="none" poster="JESUSLOVE.jpeg">
+                <source src="videos/Holyface-Gladiator-sound.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-info">
+                <div class="video-title">Holy Face (Gladiator Sound)</div>
+                <div class="video-caption">The battle belongs to the Lord.</div>
+                <button class="video-toggle" onclick="toggleVideo('video1', this)">▶ Play</button>
+            </div>
+        </div>
+
+        <!-- VIDEO 2 -->
+        <div class="video-card">
+            <video id="video2" preload="none" poster="JESUSLOVE.jpeg">
+                <source src="videos/Holyface-Aura.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <div class="video-title">Holy Face Aura</div>
+                <div class="video-caption">The radiance of His countenance.</div>
+                <button class="video-toggle" onclick="toggleVideo('video2', this)">▶ Play</button>
+            </div>
+        </div>
+
+        <!-- VIDEO 3 -->
+        <div class="video-card">
+            <video id="video3" preload="none" poster="JESUSLOVE.jpeg">
+                <source src="videos/Holyface-Anima-Christi.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <div class="video-title">Holy Face — Anima Christi</div>
+                <div class="video-caption">Soul of Christ, sanctify me.</div>
+                <button class="video-toggle" onclick="toggleVideo('video3', this)">▶ Play</button>
+            </div>
+        </div>
+
+        <!-- VIDEO 4 -->
+        <div class="video-card">
+            <video id="video4" preload="none" poster="JESUSLOVE.jpeg">
+                <source src="videos/Holyface-God-wills-it.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <div class="video-title">Holy Face (God Wills It)</div>
+                <div class="video-caption">Deus vult. God wills it.</div>
+                <button class="video-toggle" onclick="toggleVideo('video4', this)">▶ Play</button>
+            </div>
+        </div>
+
+        <!-- VIDEO 5 -->
+        <div class="video-card">
+            <video id="video5" preload="none" poster="JESUSLOVE.jpeg">
+                <source src="videos/Holyface-of-True-Love.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <div class="video-title">Holy Face of True Love</div>
+                <div class="video-caption">Greater love has no one than this.</div>
+                <button class="video-toggle" onclick="toggleVideo('video5', this)">▶ Play</button>
+            </div>
+        </div>
+
+        <!-- VIDEO 6 -->
+        <div class="video-card">
+            <video id="video6" preload="none" poster="JESUSLOVE.jpeg">
+                <source src="videos/Holyface-Aura2.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <div class="video-title">Holy Face Aura II</div>
+                <div class="video-caption">His glory fills the temple.</div>
+                <button class="video-toggle" onclick="toggleVideo('video6', this)">▶ Play</button>
+            </div>
+        </div>
+
+        <!-- VIDEO 7 -->
+        <div class="video-card">
+            <video id="video7" preload="none" poster="JESUSLOVE.jpeg">
+                <source src="videos/Holyface-Christi.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <div class="video-title">Holy Face Christi</div>
+                <div class="video-caption">The Anointed One.</div>
+                <button class="video-toggle" onclick="toggleVideo('video7', this)">▶ Play</button>
+            </div>
+        </div>
+
+        <!-- VIDEO 8 -->
+        <div class="video-card">
+            <video id="video8" preload="none" poster="JESUSLOVE.jpeg">
+                <source src="videos/Holyface-Omega.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <div class="video-title">Holy Face Omega</div>
+                <div class="video-caption">The end and the beginning.</div>
+                <button class="video-toggle" onclick="toggleVideo('video8', this)">▶ Play</button>
+            </div>
+        </div>
+
+        <!-- VIDEO 9 -->
+        <div class="video-card">
+            <video id="video9" preload="none" poster="JESUSLOVE.jpeg">
+                <source src="videos/Holyface-of-Jesus-Christ.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <div class="video-title">Holy Face of Jesus Christ</div>
+                <div class="video-caption">The Name above every name.</div>
+                <button class="video-toggle" onclick="toggleVideo('video9', this)">▶ Play</button>
+            </div>
+        </div>
+
+        <!-- VIDEO 10 -->
+        <div class="video-card">
+            <video id="video10" preload="none" poster="JESUSLOVE.jpeg">
+                <source src="videos/Holyface-Laudate-Dominum.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <div class="video-title">Holy Face (Laudate Dominum)</div>
+                <div class="video-caption">Praise the Lord, all nations.</div>
+                <button class="video-toggle" onclick="toggleVideo('video10', this)">▶ Play</button>
+            </div>
+        </div>
+
+        <!-- VIDEO 11 -->
+        <div class="video-card">
+            <video id="video11" preload="none" poster="JESUSLOVE.jpeg">
+                <source src="videos/Holyface-of-THE-LORD.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <div class="video-title">Holy Face of THE LORD</div>
+                <div class="video-caption">The LORD, the LORD, merciful and gracious.</div>
+                <button class="video-toggle" onclick="toggleVideo('video11', this)">▶ Play</button>
+            </div>
+        </div>
+
+        <!-- VIDEO 12 -->
+        <div class="video-card">
+            <video id="video12" preload="none" poster="JESUSLOVE.jpeg">
+                <source src="videos/Holyface-Christus-Rex.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <div class="video-title">Holy Face Christus Rex</div>
+                <div class="video-caption">Christ the King reigns.</div>
+                <button class="video-toggle" onclick="toggleVideo('video12', this)">▶ Play</button>
+            </div>
+        </div>
+
+        <!-- VIDEO 13 -->
+        <div class="video-card">
+            <video id="video13" preload="none" poster="JESUSLOVE.jpeg">
+                <source src="videos/Holyface-JesusSavior.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <div class="video-title">Holy Face Jesus Savior</div>
+                <div class="video-caption">He will save His people.</div>
+                <button class="video-toggle" onclick="toggleVideo('video13', this)">▶ Play</button>
+            </div>
+        </div>
+
+        <!-- VIDEO 14 -->
+        <div class="video-card">
+            <video id="video14" preload="none" poster="JESUSLOVE.jpeg">
+                <source src="videos/Holyface-AnointedOne.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <div class="video-title">Holy Face Anointed One</div>
+                <div class="video-caption">The Messiah has come.</div>
+                <button class="video-toggle" onclick="toggleVideo('video14', this)">▶ Play</button>
+            </div>
+        </div>
+
+        <!-- VIDEO 15 -->
+        <div class="video-card">
+            <video id="video15" preload="none" poster="JESUSLOVE.jpeg">
+                <source src="videos/Holyface-Alpha-and-Omega.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <div class="video-title">Holy Face Alpha and Omega</div>
+                <div class="video-caption">The first and the last.</div>
+                <button class="video-toggle" onclick="toggleVideo('video15', this)">▶ Play</button>
+            </div>
+        </div>
+
+        <!-- VIDEO 16 -->
+        <div class="video-card">
+            <video id="video16" preload="none" poster="JESUSLOVE.jpeg">
+                <source src="videos/Holyface-Face-of-God.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <div class="video-title">Holy Face — Face of God</div>
+                <div class="video-caption">Whoever has seen Me has seen the Father.</div>
+                <button class="video-toggle" onclick="toggleVideo('video16', this)">▶ Play</button>
+            </div>
+        </div>
+
+        <!-- VIDEO 17 -->
+        <div class="video-card">
+            <video id="video17" preload="none" poster="JESUSLOVE.jpeg">
+                <source src="videos/Holyface-Eternal-Son.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <div class="video-title">Holy Face Eternal Son</div>
+                <div class="video-caption">Begotten, not made.</div>
+                <button class="video-toggle" onclick="toggleVideo('video17', this)">▶ Play</button>
+            </div>
+        </div>
+
+        <!-- VIDEO 18 -->
+        <div class="video-card">
+            <video id="video18" preload="none" poster="JESUSLOVE.jpeg">
+                <source src="videos/Holyface-of-Mercy.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <div class="video-title">Holy Face of Mercy</div>
+                <div class="video-caption">His mercy endures forever.</div>
+                <button class="video-toggle" onclick="toggleVideo('video18', this)">▶ Play</button>
+            </div>
+        </div>
+
+        <!-- VIDEO 19 -->
+        <div class="video-card">
+            <video id="video19" preload="none" poster="JESUSLOVE.jpeg">
+                <source src="videos/Holyface-of-Purelove.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <div class="video-title">Holy Face of Pure Love</div>
+                <div class="video-caption">God is love.</div>
+                <button class="video-toggle" onclick="toggleVideo('video19', this)">▶ Play</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div style="text-align: center; margin-top: 40px;">
+        <a href="https://www.tiktok.com/@jesus.loveyou09" target="_blank" rel="noopener" class="btn-primary">🎵 Follow on TikTok</a>
+        <a href="index.html" class="btn-secondary">🏠 Return Home</a>
+    </div>
+</div>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://chat.whatsapp.com/HppS6aU7Upb19goraOXC7y?s=cl&p=a&ilr=0" 
+   class="floating-whatsapp" 
+   target="_blank" 
+   rel="noopener" 
+   title="Join our WhatsApp Prayer Group">
+    <svg viewBox="0 0 24 24" style="width: 30px; height: 30px; fill: #fff; pointer-events: none;">
+        <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+</a>
+
+<footer>
+    <p>🙏 In the silence, He speaks.</p>
+    <p class="footer-prayer">Holy Face of Jesus, have mercy on us.</p>
+    <div class="dev-credit">Site by <a href="#">Mac-Collins Ukwuoma</a></div>
+</footer>
+
+<script>
+    // Toggle Video Play/Pause
+    function toggleVideo(videoId, button) {
+        const video = document.getElementById(videoId);
+        if (!video) return;
+        
+        if (video.paused) {
+            // Pause all other videos first
+            document.querySelectorAll('video').forEach(v => {
+                if (v.id !== videoId && !v.paused) {
+                    v.pause();
+                    v.currentTime = 0;
+                }
+            });
+            // Reset all buttons
+            document.querySelectorAll('.video-toggle').forEach(b => {
+                b.textContent = '▶ Play';
+                b.classList.remove('playing');
+            });
+            // Play this video
+            video.play();
+            button.textContent = '⏸ Pause';
+            button.classList.add('playing');
+        } else {
+            video.pause();
+            button.textContent = '▶ Play';
+            button.classList.remove('playing');
+        }
+    }
+
+    // Reset button when video ends
+    document.querySelectorAll('video').forEach(video => {
+        video.addEventListener('ended', function() {
+            const button = document.querySelector(`[onclick*="${video.id}"]`);
+            if (button) {
+                button.textContent = '▶ Play';
+                button.classList.remove('playing');
+            }
+        });
+        // Also handle when video is paused by clicking the video itself
+        video.addEventListener('pause', function() {
+            const button = document.querySelector(`[onclick*="${video.id}"]`);
+            if (button) {
+                button.textContent = '▶ Play';
+                button.classList.remove('playing');
+            }
+        });
+        video.addEventListener('play', function() {
+            const button = document.querySelector(`[onclick*="${video.id}"]`);
+            if (button) {
+                button.textContent = '⏸ Pause';
+                button.classList.add('playing');
+            }
+        });
+    });
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
